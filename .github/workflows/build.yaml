@@ -36,6 +36,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           file: /11/debian/stretch/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/arm/v8
           tags: ${{ env.TAGS }}
           push: true
